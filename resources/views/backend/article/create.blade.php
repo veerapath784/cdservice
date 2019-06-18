@@ -1,0 +1,71 @@
+@extends('backend.layout.master')
+@section('content')
+<div class="card">
+    <div class="card-header"><i class="fa fa-cubes"></i> เพิ่มข่าวสาร</div>
+    <div class="card-body">
+        <h4>โปรดกรอกข้อมูลให้ครบถ้วน</h4>
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        <form  action="#" method="post">
+            @csrf
+
+            <div class="form-group mt-5 col-md-8">
+                    <label for="inputVersion">หัวข้อข่าว: </label>
+                    <input type="text" name="#"  class="form-control" placeholder="กรอกหัวข้อข่าว">
+                </div>
+            <div class="form-group col-md-8">
+                    <label for="inputText">เนื้อหา :</label>
+                    <textarea id="summernote2" name="#"></textarea>
+            </div>
+            <div class="form-group  col-md-8">
+                    <label for="inputVersion">คำโปรย: </label>
+                    <input type="text" name="#"  class="form-control" placeholder="กรอกคำโปรย">
+                </div>
+
+                <div class="form-group  col-md-8">
+                <input type="file" name="#" class="file">
+                <div class="input-group col-xs-5">
+
+                  <input type="text" class="form-control form-controll input-lg" disabled placeholder="อัพโหลดรูปภาพ">
+                  <span class="input-group-btn">
+                    <button class="browse btn btn-primary input-lg" type="button"><i class="fas fa-search"></i> เลือกรูปภาพ</button>
+                  </span>
+                </div>
+                </div>
+
+
+            <button class="btn btn-primary"> <i class="fa fa-save"></i> บันทึก</button>
+        </form>
+    </div>
+</div>
+@section('script')
+<script>
+    $(document).ready(function() {
+    $('#summernote2').summernote({
+        placeholder: 'เนื้อหา ข้อความ',
+        tabsize: 1,
+        height: 300,                 // set editor height
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+  focus: true
+      });
+  });
+
+  $(document).on('click', '.browse', function(){
+  var file = $(this).parent().parent().parent().find('.file');
+  file.trigger('click');
+});
+$(document).on('change', '.file', function(){
+  $(this).parent().find('.form-controll').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+});
+
+</script>
+@endsection
+@endsection
