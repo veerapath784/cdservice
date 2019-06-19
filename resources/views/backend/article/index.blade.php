@@ -20,36 +20,36 @@
         <h4>ระบบปฏิบัติการ</h4>
     </div>
     <table class="table">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>ชื่อระบบ</th>
-                <th>เวอร์ชั่น</th>
-                <th>บิวต์</th>
-                <th>ปี</th>
-                <th>ความคิดเห็น</th>
-                <th>จัดการ</th>
-                <th>จัดการ</th>
-            </tr>
-        </thead>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>หมวดหมู่ข่าว</th>
+                    <th>หัวเรื่อง</th>
+                    <th>จัดการ</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
+            @foreach($articles as $article)
+            <tbody>
+                <tr>
+                    <td>{{$article->id}}</td>
+                    <td>{{$article->category['name']}}</td>
+                    <td>{{$article->title}}</td>
 
-                <td>
-                    <a href="/admin/manage/operatingSystem/#/edit"
-                        class="btn btn-warning btn-sm">
-                        <i class="fa fa-edit"></i>
-                    </a>
+                    <td>
+                        <a href="/admin/article/{{$article->id}}/edit"
+                            class="btn btn-warning btn-sm">
+                            <i class="fa fa-edit"></i>
+                        </a>
 
-                    <a href="javaScript: deleteItem('#')" class="btn btn-sm btn-danger">
-                        <i class="fa fa-times"></i> ลบ
-                    </a>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
+                        <a href="javaScript: deleteItem('{{$article->id}}')" class="btn btn-sm btn-danger">
+                            <i class="fa fa-times"></i> ลบ
+                        </a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
     @section('script')
     <script>
         var deleteItem = function deleteItem(id) {
@@ -61,8 +61,8 @@
                 showCancelButton: true,
             }).then(function (result) {
                 if (result.value) {
-                    axios.delete('/admin/manage/operatingSystem/' + id).then(function (response) {
-                        window.location.href = "/admin/manage/operatingSystem";
+                    axios.delete('/admin/article/' + id).then(function (response) {
+                        window.location.href = "/admin/article";
                     }).catch(function (error) {
                         console.log(error.response)
                         swal('เกิดข้อผิดพลาด', 'ไม่สามารถลบข้อมูลได้ \n ' + error.response

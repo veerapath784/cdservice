@@ -13,27 +13,35 @@
             </ul>
         </div>
         @endif
-        <form  action="#" method="post">
+        <form action="/admin/article" method="POST" enctype="multipart/form-data">
             @csrf
+            <div class="form-group mt-5 col-md-5">
+                <label for="inputClientTypeId">เลือกหมวดหมู่ </label>
+                <select name="category_id" id="inputClientTypeId" class="form-control">
+                    @foreach($categorys as $category)
+                    <option value="{{$category->id}}">{{$category->name}}</option>
+                    @endforeach
+                </select>
+            </div>
 
-            <div class="form-group mt-5 col-md-8">
+            <div class="form-group  col-md-8">
                     <label for="inputVersion">หัวข้อข่าว: </label>
-                    <input type="text" name="#"  class="form-control" placeholder="กรอกหัวข้อข่าว">
+                    <input type="text" name="title"  class="form-control" placeholder="กรอกหัวข้อข่าว">
                 </div>
             <div class="form-group col-md-8">
                     <label for="inputText">เนื้อหา :</label>
-                    <textarea id="summernote2" name="#"></textarea>
+                    <textarea id="summernote2" name="detail"></textarea>
             </div>
             <div class="form-group  col-md-8">
                     <label for="inputVersion">คำโปรย: </label>
-                    <input type="text" name="#"  class="form-control" placeholder="กรอกคำโปรย">
+                    <input type="text" name="description"  class="form-control" placeholder="กรอกคำโปรย">
                 </div>
 
                 <div class="form-group  col-md-8">
-                <input type="file" name="#" class="file">
+                <input type="file" name="thumbnail" class="file">
                 <div class="input-group col-xs-5">
 
-                  <input type="text" class="form-control form-controll input-lg" disabled placeholder="อัพโหลดรูปภาพ">
+                  <input type="text" name="thumbnail" class="form-control form-controll input-lg" disabled placeholder="อัพโหลดรูปภาพ">
                   <span class="input-group-btn">
                     <button class="browse btn btn-primary input-lg" type="button"><i class="fas fa-search"></i> เลือกรูปภาพ</button>
                   </span>

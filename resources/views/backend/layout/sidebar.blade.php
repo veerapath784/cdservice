@@ -16,13 +16,15 @@
                     <i class="nav-icon icon-check"></i> ตรวจสอบสถานะ</a>
             </li>
             <li class="nav-title">จัดการ</li>
+
+
             <li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#">
-                        <i class="fas fa-cogs"></i> จัดการระบบ</a>
+                        <i class="nav-icon fas fa-cogs"></i> จัดการระบบ</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/manage/campus">
-                            <i class="fa fa-map"></i> พื้นที่จัดการศึกษา</a>
+                        <a class="nav-link" href="/admin/category">
+                            <i class="fas fa-layer-group"></i> หมวดหมู่ข่าวสาร</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/article">

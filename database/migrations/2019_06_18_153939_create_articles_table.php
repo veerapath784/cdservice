@@ -15,6 +15,12 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('category_id')->comment('หมวดหมู่');
+            $table->integer('user_id')->comment('คนแอ็ด');
+            $table->string('title')->comment('หัวเรื่อง');
+            $table->longtext('detail')->comment('เนื้อหาข่าว');
+            $table->string('thumbnail')->comment('รูปภาพหัวเรื่อง');
+            $table->string('description')->comment('คำโปรย');
             $table->timestamps();
         });
     }

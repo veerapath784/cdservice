@@ -8,8 +8,9 @@
     <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>ระบบจัดการข้อมูลแอพพลิเคชั่น สโมสร Rotary เชียงราย - พะเยา</title>
+    <title>อำเภอเชียงดาว Chiang Dao</title>
     <!-- Main styles for this application-->
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png">
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">

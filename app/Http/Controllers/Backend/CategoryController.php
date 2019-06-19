@@ -4,19 +4,16 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Helpers\ImageUpload;
-use App\Article;
 use App\Category;
 
-class ArticleController extends Controller
+class CategoryController extends Controller
 {
 
     protected $rules = [
-        'title' => 'required',
-        'thumbnail' => 'required|file',
-        'description' => 'required|max:255'
+        'name' => 'required',
+
     ];
-    protected $path = "/admin/article";
+    protected $path = "/admin/category";
     /**
      * Display a listing of the resource.
      *
@@ -24,9 +21,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('backend.article.index', [
-            'articles' => Article::orderBy('id','desc')->get()
-            ]);
+        return view('backend.category.index', [
+            'categorys' => Category::all()
+        ]);
     }
 
     /**
@@ -36,9 +33,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('backend.article.create', [
-            'categorys' => Category::all()
-        ]);
+        return view('backend.category.create');
     }
 
     /**
@@ -49,27 +44,13 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $imageName = "https://via.placeholder.com/450x580";
-        if (request()->has('thumbnail')) {
-            $imageUpload = new ImageUpload(request()->file('thumbnail'), '/images/article');
-            $imageUpload->width = 255;
-            $imageUpload->upload();
-            $imageUpload->resize('aspect');
-            $imageName = $imageUpload->save();
-        }
-
-            $request->validate($this->rules);
-            $article = new Article();
-            $article->title = $request->input('title');
-            $article->category_id = $request->input('category_id');
-            $article->thumbnail = $imageName;
-            // $article->user_id = auth()->user()->id ;
-            $article->detail = $request->input('detail');
-            $article->description = $request->input('description');
-            $article-> save();
-            return redirect($this->path);
-
+        $request->validate($this->rules);
+        $category = new Category();
+        $category->name = $request->input('name');
+        $category       ->save();
+        return redirect($this->path);
     }
+
     /**
      * Display the specified resource.
      *
@@ -89,7 +70,11 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        $data = [
+            'category' => $category
+        ];
+        return view('backend.category.edit', $data);
     }
 
     /**
@@ -101,7 +86,11 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate($this->rules);
+        $category = Category::find($id);
+        $category->name = $request->input('name');
+        $category       ->save();
+        return redirect($this->path);
     }
 
     /**
@@ -112,6 +101,8 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $category = \App\Category::find($id);
+        $category->delete();
+        return response()->json();
     }
 }

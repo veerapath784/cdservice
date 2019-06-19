@@ -25,4 +25,9 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::resource('district', 'Backend\\DistrictController');
     Route::resource('article', 'Backend\\ArticleController');
+    Route::resource('category', 'Backend\\CategoryController');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
