@@ -31,12 +31,12 @@
                             <i class="far fa-newspaper"></i> ข่าวสาร</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/manage/application">
-                            <i class="fab fa-chrome"></i> โปรแกรม</a>
+                        <a class="nav-link" href="/admin/banner">
+                            <i class="fas fa-bullhorn"></i> Banner</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/manage/brand">
-                            <i class="fab fa-apple"></i> ยี่ห้อ</a>
+                        <a class="nav-link" href="/admin/department">
+                            <i class="fas fa-building"></i> หน่วงงาน</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/manage/client">

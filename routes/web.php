@@ -26,6 +26,8 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('district', 'Backend\\DistrictController');
     Route::resource('article', 'Backend\\ArticleController');
     Route::resource('category', 'Backend\\CategoryController');
+    Route::resource('banner', 'Backend\\BannerController');
+    Route::resource('department', 'Backend\\DepartmentController');
 });
 
 Auth::routes();

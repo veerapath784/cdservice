@@ -21,7 +21,7 @@
     </div>
     <table class="table">
         <thead>
-            <tr>
+            <tr class="text-center">
                 <th>#</th>
                 <th>หมวดหมู่ข่าว</th>
                 <th>จัดการ</th>
@@ -30,7 +30,7 @@
 
         @foreach($categorys as $category)
         <tbody>
-            <tr>
+            <tr class="text-center">
                 <td>{{$category->id}}</td>
                 <td>{{$category->name}}</td>
 
