@@ -5,27 +5,25 @@ namespace App\Http\Controllers\Backend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Helpers\ImageUpload;
-use App\Article;
-use App\Category;
+use App\Travel;
 
-class ArticleController extends Controller
+class TravelController extends Controller
 {
-
     protected $rules = [
         'title' => 'required',
         'thumbnail' => 'required|file',
         'description' => 'required|max:255'
     ];
-    protected $path = "/admin/article";
+    protected $path = "/admin/travel";
     /**
      * Display a listing of the resource.
-     *
+     *77
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return view('backend.article.index', [
-            'articles' => Article::orderBy('id','desc')->get()
+        return view('backend.travel.index', [
+            'travels' => Travel::orderBy('id','desc')->get()
             ]);
     }
 
@@ -36,9 +34,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('backend.article.create', [
-            'categorys' => Category::all()
-        ]);
+        return view('backend.travel.create');
     }
 
     /**
@@ -51,7 +47,7 @@ class ArticleController extends Controller
     {
         $imageName = "https://via.placeholder.com/450x580";
         if (request()->has('thumbnail')) {
-            $imageUpload = new ImageUpload(request()->file('thumbnail'), '/images/article');
+            $imageUpload = new ImageUpload(request()->file('thumbnail'), '/images/travel');
             $imageUpload->width = 255;
             $imageUpload->upload();
             $imageUpload->resize('aspect');
@@ -59,17 +55,18 @@ class ArticleController extends Controller
         }
 
             $request->validate($this->rules);
-            $article = new Aerticle();
-            $article->title = $request->input('title');
-            $article->category_id = $request->input('category_id');
-            $article->thumbnail = $imageName;
-            // $article->user_id = auth()->user()->id ;
-            $article->detail = $request->input('detail');
-            $article->description = $request->input('description');
-            $article-> save();
+            $travel = new Travel();
+            $travel->title = $request->input('title');
+            $travel->thumbnail = $imageName;
+            // $travel->user_id = auth()->user()->id ;
+            $travel->detail = $request->input('detail');
+            $travel->phone = $request->input('phone');
+            $travel->description = $request->input('description');
+            $travel-> save();
             return redirect($this->path);
 
     }
+
     /**
      * Display the specified resource.
      *
@@ -112,8 +109,8 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        $article = \App\Article::find($id);
-        $article->delete();
+        $travel = \App\Travel::find($id);
+        $travel->delete();
         return response()->json();
     }
 }

@@ -28,6 +28,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('category', 'Backend\\CategoryController');
     Route::resource('banner', 'Backend\\BannerController');
     Route::resource('department', 'Backend\\DepartmentController');
+    Route::resource('travel', 'Backend\\TravelController');
 });
 
 Auth::routes();
