@@ -11,9 +11,12 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/play', function () {
+    return view('layout.master');
+});
+
+
+
 Route::get('/admin/dashboard', 'Backend\\DashboardController@index');
 
 Route::group(['prefix' => 'admin'], function () {
