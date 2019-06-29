@@ -17,28 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/shop-homepage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
-    <style>
-        .header {
-            background-color: #2a9d8f;
-            height: 200px;
-            text-align: center;
-            color: #2b2d42;
-        }
 
-        .font {
-            font-family: 'Kanit', sans-serif;
-        }
-
-        .text-run {
-            background-color: #fff;
-            color: #2a9d8f;
-            border-style: solid;
-            border-width: 0px 0px 10px 0px;
-            font-size: 20px;
-            padding-top: 5px;
-
-        }
-    </style>
 
 </head>
 
@@ -53,7 +32,8 @@
 
 
     <div class="text-run font">
-        <marquee direction="left">ยินดีต้อนรับเข้าสู่ "สำนักงานสาธารณสุขอำเภอเทพา" โทรศัพท์ 074-376296 FAX: 074-376296
+        <marquee direction="left">เชียงดาวชายแดน ถ้ำสวยดอยสูง พระสถูปเมืองงาย กำเนิดสายแม่ปิง
+
         </marquee>
     </div>
 
@@ -97,29 +77,75 @@
             </div>
 
     </nav>
-
+    <div class="slogan font">
+        <h4>
+            ยินดีต้อนรับเข้าสู่ "อำเภอเชียงดาว" โทรศัพท์: 0-5345-5176 FAX: 0-5345-5176
+        </h4>
+    </div>
 
     <!-- Page Content -->
 
     <div class="container">
         <div class="row" style="padding-right:3px">
-
-            <div class="col-lg-3  my-4" style=" border-style: solid;
-            border-top-color: #2a9d8f; border-width: 5px 0px 0px 0px;  background-color: #fff;">
-                <h1 class="my-4"> Name</h1>
-                <div class="list-group">
-                    <a href="#" class="list-group-item">Category 1</a>
-                    <a href="#" class="list-group-item">Category 2</a>
-                    <a href="#" class="list-group-item">Category 3</a>
+            <div class="col-lg-3  my-4">
+                <div class="search font mb-3">
+                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
+                </div>
+                <div class="mb-3">
+                <div class="header-box font ">
+                    <h5> นายอำเภอเชียงดาว</h5>
+                </div>
+                <div class="font border">
+                    <div class="text-center mb-2 mt-1">
+                        <img src="/images/img.jpg" width="200" height="235" alt="First slide">
+                    </div>
+                    <h6 class="bold">นาย ชัชวาลย์ พุทธโธ</h6>
+                    <h6 class="bold">นายอำเภอเชียงดาว</<h6>
                 </div>
             </div>
+
+
+            <div class="mb-3">
+                    <div class="header-box font ">
+                        <h5> เมนูหลัก</h5>
+                    </div>
+                    <div size="3" class="font top-menu ">
+                    <div style="font-size: 100%;">
+                        <img src="https://goo.gl/2HR6XB">
+                        <span =""="" style="font-size:100%;">
+                            <span family="TH SarabunIT๙">
+                                <a href="https://thephadho.blogspot.com/p/blog-page_2.html" target="_blank">วิสัยทัศน์/พันธกิจ</a>
+                            </span>
+                        </span>
+                    </div>
+                    <div style="font-size: 100%;">
+                        <img src="https://goo.gl/ec1ZEd" style="font-size: 100%;">
+                        <span =""="" style="font-size:100%;"> </span><span =""="" style="font-size:100%;">
+                            <span family="TH SarabunIT๙">
+                                <a href="https://thephadho.blogspot.com/p/blog-page_6.html" target="_blank">ข้อมูลบุคลากร</a>
+                            </span>
+                        </span>
+                    </div>
+
+                                    <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-stalker-16.png" style="font-size: 100%;">
+                                    <span =""="" style="font-size:100%;"></span>
+                                    <span =""="" style="font-size:100%;">
+                                        <span family="TH SarabunIT๙">
+                                            <a href="https://thephadho.blogspot.com/p/blog-page_23.html" target="_blank">โครงสร้างการบริหารงาน</a>
+                                        </span>
+                                    </span>
+                                </div>
+
+
+                </div>
+            </div>
+
 
             <!-- /.col-lg-3 -->
 
             <div class="col-lg-9">
-
-
-                <div style=" color: #2a9d8f; border-style: solid; border-width: 0px 0px 5px 0px;" id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                <div style=" color: #2a9d8f; border-style: solid; border-width: 0px 0px 5px 0px;"
+                    id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

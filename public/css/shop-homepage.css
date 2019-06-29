@@ -8,3 +8,62 @@ body {
   background-color: #DDDDDD;
 
 }
+.header {
+    background-color: #2a9d8f;
+    height: 200px;
+    text-align: center;
+    color: #2b2d42;
+}
+
+.font {
+    font-family: 'Kanit', sans-serif;
+}
+
+.text-run {
+    background-color: #fff;
+    color: #2a9d8f;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    font-size: 20px;
+    padding-top: 5px;
+
+}
+.header-box {
+    background-color: #2a9d8f;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+}
+.border{
+    border-style: solid;
+   background-color: #fff;
+   text-align: center;
+}
+
+.bold{
+    color: #3a506b;
+    font-weight: bold;
+}
+.slogan{
+    background-color: #fff;
+    color: #2a9d8f;
+    border-style: solid;
+    border-width: 0px 0px 10px 0px;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+.search{
+    background-color: #fff;
+    color: #2a9d8f;
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    font-size: 20px;
+
+}
+.top-menu{
+
+    background-color: #fff;
+
+}
