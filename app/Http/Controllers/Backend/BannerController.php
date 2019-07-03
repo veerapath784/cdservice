@@ -53,6 +53,7 @@ class BannerController extends Controller
         if (request()->has('thumbnail')) {
             $imageUpload = new ImageUpload(request()->file('thumbnail'), '/images/banner');
             $imageUpload->width = 1900;
+
             $imageUpload->upload();
             $imageUpload->resize('aspect');
             $imageName = $imageUpload->save();
@@ -110,6 +111,7 @@ class BannerController extends Controller
         if (request()->has('thumbnail')) {
             $imageUpload = new ImageUpload(request()->file('thumbnail'), '/images/banner');
             $imageUpload->width = 1280;
+            $imageUpload->height = 400;
             $imageUpload->upload();
             $imageUpload->resize('aspect');
             $imageName = $imageUpload->save();

@@ -10,8 +10,8 @@ class ImageUpload
     public $file;
     public $baseWidth = 1280;
     public $baseHeight = null;
-    public $width = 250;
-    public $height = 250;
+    public $width = 900;
+    public $height = 350;
     private $savePath;
     private $extension;
     private $randomNumber;
