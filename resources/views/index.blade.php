@@ -94,8 +94,8 @@
                         background-size: 100% 100%; max-width: 100%;  height:400px;">
 
                         <div class="carousel-caption d-none d-md-block">
-                            <h4>
-                                <a href="{{$banner->link}}" style="color:ivory"></a></h4>
+                            <h5 style="background-color: #111;  opacity:0.7;">
+                                <a href="{{$banner->link}}" style="color:ivory">{{$banner->title}}</a></h4>
                         </div>
                     </div>
                     @php($j++)
@@ -113,25 +113,29 @@
 
 
             <div style=" border: 6px solid #fff; background-color: #fff;">
+                <h3 class="fontPrompt mb-3" style="border-left: 6px solid #FDE313;
+     background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
+        <span class="font" style="margin-left:15px; color:#fff;"><i class="fas fa-newspaper"></i> ข่าวใหม่ล่าสุด </span></h3>
                 <div class="row">
-
+                    @foreach ($latestArticle as $article)
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                            <div class="card-body">
-                                <h4 class="card-title">
-                                    <a href="#">Item One</a>
-                                </h4>
-                                <h5>$24.99</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-                                    numquam aspernatur!</p>
+                            <a href="#"><img class="card-img-top" style="background-repeat: no-repeat;
+                                background-size: 100% 100%; max-width: 100%;  height:200px;" src="{{$article->thumbnail}}" alt=""></a>
+                            <div class="card-body articel">
+                                <h5 class="card-title">
+                                   {{$article->title}}
+
+                                </h5>
+
+                                <p class="card-text" style="font-size:13px;">{!!$article->description!!}  <a href="">อ่านต่อ</a></p>
+                                <h6 class="card-text  articel" ><i class="far fa-calendar-alt"></i> {!!$article->date!!}</h6>
                             </div>
-                            <div class="card-footer">
-                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                            </div>
+
                         </div>
                     </div>
-
+                    @endforeach
+{{--
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
                             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
@@ -164,7 +168,7 @@
                                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
 
 

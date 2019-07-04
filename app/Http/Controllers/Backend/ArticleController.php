@@ -59,13 +59,14 @@ class ArticleController extends Controller
         }
 
             $request->validate($this->rules);
-            $article = new Aerticle();
+            $article = new Article();
             $article->title = $request->input('title');
             $article->category_id = $request->input('category_id');
             $article->thumbnail = $imageName;
             // $article->user_id = auth()->user()->id ;
             $article->detail = $request->input('detail');
             $article->description = $request->input('description');
+            $article->date = $request->input('date');
             $article-> save();
             return redirect($this->path);
 

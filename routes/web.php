@@ -11,11 +11,8 @@
 |
 */
 
-Route::get('/play', function () {
-    return view('layout.master');
-});
 
-Route::get('/index', 'HomepageController@index');
+Route::get('/', 'HomepageController@index');
 
 Route::get('/admin/dashboard', 'Backend\\DashboardController@index');
 

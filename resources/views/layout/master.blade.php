@@ -17,6 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="/css/shop-homepage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 
 </head>
@@ -89,7 +91,7 @@
     <!-- /.row -->
     <br>
     <!-- Footer -->
-    <footer class="py-5 bg-dark" style=" color: #2a9d8f; border-style: solid; border-width: 10px 0px 0px 0px;">
+    <footer class="py-5 bg-dark" style=" color: #11998e; border-style: solid; border-width: 10px 0px 0px 0px;">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
         </div>

@@ -20,6 +20,7 @@ class CreateTravelsTable extends Migration
             $table->string('thumbnail')->comment('รูปภาพหัวเรื่องแหล่งท่องเที่ยว');
             $table->string('description')->comment('คำโปรย');
             $table->string('phone')->comment('เบอร์ติดต่อ');
+
             $table->timestamps();
         });
     }

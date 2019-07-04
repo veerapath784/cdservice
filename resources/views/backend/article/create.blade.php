@@ -47,6 +47,10 @@
                   </span>
                 </div>
                 </div>
+                <div class="form-group  col-md-8">
+                    <label for="inputVersion">วันที่เพื่มข่าวสาร: </label>
+                    <input type="date" name="date"  class="form-control" placeholder="กรอกวันที่">
+                </div>
 
 
             <button class="btn btn-primary"> <i class="fa fa-save"></i> บันทึก</button>

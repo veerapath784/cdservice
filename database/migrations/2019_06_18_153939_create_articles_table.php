@@ -21,6 +21,7 @@ class CreateArticlesTable extends Migration
             $table->longtext('detail')->comment('เนื้อหาข่าว');
             $table->string('thumbnail')->comment('รูปภาพหัวเรื่อง');
             $table->string('description')->comment('คำโปรย');
+            $table->date('date')->commemt('วัยที่แอ็ด');
             $table->timestamps();
         });
     }

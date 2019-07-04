@@ -7,4 +7,5 @@
         <span>Powered by</span>
         <a href="https://coreui.io">CoreUI</a>
       </div>
+     
 </footer>
