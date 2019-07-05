@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Banner;
 use App\Article;
+use App\Department;
 
 class HomepageController extends Controller
 {
@@ -26,6 +27,14 @@ class HomepageController extends Controller
     public function history()
     {
         return view('history');
+    }
+    public function department()
+    {
+        return view('department',[
+            'departments' => Department::all(),
+
+
+        ]);
     }
 
 
