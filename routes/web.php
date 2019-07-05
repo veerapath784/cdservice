@@ -13,6 +13,8 @@
 
 
 Route::get('/', 'HomepageController@index');
+Route::get('/history', 'HomepageController@history');
+
 
 Route::get('/admin/dashboard', 'Backend\\DashboardController@index');
 
@@ -33,4 +35,4 @@ Route::group(['prefix' => 'admin'], function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

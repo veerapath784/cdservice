@@ -23,5 +23,10 @@ class HomepageController extends Controller
         ]);
     }
 
+    public function history()
+    {
+        return view('history');
+    }
+
 
 }

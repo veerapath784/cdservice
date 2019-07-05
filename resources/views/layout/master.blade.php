@@ -17,6 +17,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/shop-homepage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kanit:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -49,7 +50,7 @@
             <div class="navbar-collapse collapse" id="navbar10">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">หน้าหลัก
+                        <a class="nav-link" href="/">หน้าหลัก
                             <span class="sr-only">(current)</span>
                         </a>
                     </li> <span class="nav-item" style="color:aliceblue; margin-top:5px;">|</span>
@@ -59,7 +60,7 @@
                             ข้อมูลอำเภอ
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="/history">ประวัติอำเภอเชียงดาว</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
@@ -85,9 +86,84 @@
         </h4>
     </div>
 
+    <div class="container">
+        <div class="row" style="padding-right:3px">
+            <div class="col-lg-3  my-4">
+                <div class="search font mb-3">
+                    <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
+                </div>
+                <div class="mb-3">
+                    <div class="header-box font ">
+                        <h5> นายอำเภอเชียงดาว</h5>
+                    </div>
+                    <div class="font border">
+                        <div class="text-center mb-2 mt-1">
+                            <img src="/images/img.jpg" width="200" height="235" alt="First slide">
+                        </div>
+                        <h6 class="bold">นาย ชัชวาลย์ พุทธโธ</h6>
+                        <h6 class="bold">นายอำเภอเชียงดาว</<h6>
+                    </div>
+                </div>
+
+
+                <div class="mb-3">
+                    <div class="header-box font ">
+                        <h5> เมนูหลัก</h5>
+                    </div>
+                    <div size="3" class="font top-menu ">
+                        <div style="font-size: 100%;">
+                            <img src="https://goo.gl/2HR6XB">
+                            <span=""="" style="font-size:100%;">
+                                <span family="TH SarabunIT๙">
+                                    <a href="https://thephadho.blogspot.com/p/blog-page_2.html"
+                                        target="_blank">วิสัยทัศน์/พันธกิจ</a>
+                                </span>
+                            </span>
+                        </div>
+                        <div style="font-size: 100%;">
+                            <img src="https://goo.gl/ec1ZEd" style="font-size: 100%;">
+                            <span=""="" style="font-size:100%;"> </span><span=""="" style="font-size:100%;">
+                                <span family="TH SarabunIT๙">
+                                    <a href="https://thephadho.blogspot.com/p/blog-page_6.html"
+                                        target="_blank">ข้อมูลบุคลากร</a>
+                                </span>
+                            </span>
+                        </div>
+
+                        <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-stalker-16.png"
+                            style="font-size: 100%;">
+                        <span=""="" style="font-size:100%;"></span>
+                        <span=""="" style="font-size:100%;">
+                            <span family="TH SarabunIT๙">
+                                <a href="https://thephadho.blogspot.com/p/blog-page_23.html"
+                                    target="_blank">โครงสร้างการบริหารงาน</a>
+                            </span>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="mb-3">
+                    <div class="header-box font ">
+                        <h5> วีดีโอแนะนำ</h5>
+                    </div>
+                    <div class="font border">
+                        <div class="text-center mb-2 mt-1">
+                            test
+                        </div>
+
+                    </div>
+                </div>
+
+
+        </div>
+        @yield('content')
+    </div>
+    </div>
+
     <!-- Page Content -->
 
-@yield('content')
+
     <!-- /.row -->
     <br>
     <!-- Footer -->
