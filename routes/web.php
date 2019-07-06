@@ -15,6 +15,7 @@
 Route::get('/', 'HomepageController@index');
 Route::get('/history', 'HomepageController@history');
 Route::get('/department', 'HomepageController@department');
+Route::get('/news/{id}', 'NewsController@show');
 
 
 Route::get('/admin/dashboard', 'Backend\\DashboardController@index');

@@ -4,7 +4,7 @@
 
 <!-- /.col-lg-3 -->
 
-<div class="col-lg-9">
+<div class="col-lg-8">
     <div style=" color: #07524b; border-style: solid; border-width: 0px 0px 5px 0px;" id="carouselExampleIndicators"
         class="carousel slide my-4" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -52,9 +52,9 @@
             background-size: 100% 100%; max-width: 100%;  height:350px;" src="{{$article->thumbnail}}"
                 alt="Card image cap">
             <div class="card-body articel">
-                <h2 class="card-title">{{$article->title}}</h2>
+                <h2 class="card-title"> {{$article->title}}</h2>
                 <p class="card-text">{!!$article->description!!} </p>
-                <a href="#" class="btn r" style="background-color: #202e31; color:#ffffff;">Read More &rarr;</a>
+                <a href="/news/{!! $article->id !!}" class="btn r" style="background-color: #202e31; color:#ffffff;">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted articel ">
                 <i class="far fa-calendar-alt"></i> {!!$article->date!!}
