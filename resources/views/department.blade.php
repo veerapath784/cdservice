@@ -12,7 +12,7 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
 
 
 
-       <div class="container font">
+       <div class="container font2">
             <table class="table table-bordered">
                     <thead>
                       <tr class="text-center">
@@ -27,8 +27,8 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
                       <tr class="text-center" style="font-size:14px;">
                         <th scope="row">{{$department->id}}</th>
                         <td width="200px;">{{$department->name}}</td>
-                        <td>{{$department->address}}</td>
-                        <td width="200px;">{{$department->phone}}</td>
+                        <td width="400px;">{{$department->address}}</td>
+                        <td width="130px;">{{$department->phone}}</td>
                       </tr>
                       @endforeach
                     </tbody>

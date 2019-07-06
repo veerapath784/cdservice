@@ -5,7 +5,7 @@
 <div class="col-lg-9">
 
 
-    <div style=" border: 6px solid #fff; background-color: #fff;">
+    <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
         <h3 class="fontPrompt mb-3" style="border-left: 6px solid #FDE313;
 background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
 <span class="font" style="margin-left:15px; color:#fff;"><i class="fas fa-newspaper"></i> ประวัติของอำเภอเชียงดาว </span></h3>
