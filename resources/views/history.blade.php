@@ -2,7 +2,7 @@
 @section('content')
 
 
-<div class="col-lg-9">
+<div class="col-lg-6">
 
 
     <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
@@ -12,7 +12,7 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
 
 
 
-       <div class="container ">
+       <div class="container " style="font-size:13px;">
             <p style="margin: 0.5em 0px; text-indent: 2.5em; line-height: inherit;"><font color="#222222" face="sans-serif"><b>ประวัติ</b></font><br></p>
 
                <p style="margin: 0.5em 0px; text-indent: 2.5em; line-height: inherit; color: rgb(34, 34, 34); font-family: sans-serif;">ไม่ปรากฏหลักฐานชัดเจนว่าบ้านเชียงดาวกำเนิดขึ้นในยุคสมัยใด แต่พงศาวดารโยนกได้อ้างถึงเมืองเชียงดาวนี้ 3 ครั้ง คือ</p><ul style="margin: 0.3em 0px 0px 2.5em; padding: 0px; list-style-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%225%22 height=%2213%22%3E %3Ccircle cx=%222.5%22 cy=%229%22 r=%222.5%22 fill=%22%23222%22/%3E %3C/svg%3E&quot;); color: rgb(34, 34, 34); font-family: sans-serif;"><li style="margin-bottom: 0.1em;">เมื่อประมาณ 600 ปีก่อน&nbsp;พญามังราย&nbsp;ปฐมกษัตริย์ของล้านนา&nbsp;ได้ยกเมืองเชียงดาวให้เป็นบำเหน็จความชอบในราชการ สงครามแก่เจ้าไชยสงคราม ราชโอรสองค์ที่ 2</li><li style="margin-bottom: 0.1em;">สมัยที่พระเจ้าบุเรงนอง&nbsp;กษัตริย์พม่า ยกกองทัพเข้ามา ในปี พ.ศ. 2109</li><li style="margin-bottom: 0.1em;">เมื่อคราวที่สมเด็จพระนเรศวร&nbsp;กษัตริย์อยุธยา ได้ทรงตั้งทัพที่บ้านเมืองงาย เมืองเชียงดาวเพื่อเดินทัพเข้าตีเมืองอังวะ</li></ul><p style="margin: 0.5em 0px; text-indent: 2.5em; line-height: inherit; color: rgb(34, 34, 34); font-family: sans-serif;">จากหลักฐานต่างๆ จึงอาจกล่าวได้ว่า เมืองเชียงดาวเป็นเมืองเก่าแก่โบราณ และในช่วงเวลานับเป็นร้อยปีของประวัติศาสตร์ที่ผ่านมา เมืองเชียงดาวคงประสบภัยสงครามทำให้เมืองร้างไปหลายครั้ง และก่อตั้งขึ้นมาใหม่อีกหลายครั้งเช่นเดียวกับเมืองเชียงใหม่และหัวเมืองอื่นๆ</p>

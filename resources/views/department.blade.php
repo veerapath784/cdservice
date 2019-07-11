@@ -2,7 +2,7 @@
 @section('content')
 
 
-<div class="col-lg-9">
+<div class="col-lg-6">
 
 
     <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
@@ -12,11 +12,11 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
 
 
 
-       <div class="container font2">
+       <div class="container font2" ">
             <table class="table table-bordered">
                     <thead>
-                      <tr class="text-center">
-                        <th scope="col">ลำดับที่</th>
+                      <tr class="text-center" style="font-size:14px;">
+
                         <th scope="col">ชื่อหน่วยงาน</th>
                         <th scope="col">ที่ตั้ง</th>
                         <th scope="col">โทรศัพท์ / โทรสาร</th>
@@ -24,11 +24,11 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
                     </thead>
                     @foreach($departments as $department)
                     <tbody>
-                      <tr class="text-center" style="font-size:14px;">
-                        <th scope="row">{{$department->id}}</th>
+                      <tr class="text-center" style="font-size:12px;">
+
                         <td width="200px;">{{$department->name}}</td>
                         <td width="400px;">{{$department->address}}</td>
-                        <td width="130px;">{{$department->phone}}</td>
+                        <td width="160px;">{{$department->phone}}</td>
                       </tr>
                       @endforeach
                     </tbody>

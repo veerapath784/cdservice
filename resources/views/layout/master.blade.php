@@ -27,7 +27,7 @@
 <body>
 
     <!-- Navigation -->
-    <div class="header w-100 " >
+    <div class="header w-100 ">
         <br><br>
         <h1 class="font" style=" text-shadow: 2px 2px #fff;
         font-size: 80px; font-weight: bold;">อำเภอเชียงดาว จังหวัดเชียงใหม่</h1>
@@ -88,14 +88,12 @@
 
     <div class="container">
         <div class="row" style="padding-right:3px">
-            <div class="col-lg-3  my-4">
-                <div class="search font mb-3">
-                    <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
-                </div>
-                <div class="mb-3">
+            <div class="col-lg-3  my-4" style="font-size:13px;">
 
+                <!-- Left Bar -->
+                <div class="mb-3">
                     <div class="header-box font ">
-                        <h5> นายอำเภอเชียงดาว</h5>
+                        <h6> นายอำเภอเชียงดาว</h6>
                     </div>
                     <div class="font border">
                         <div class="text-center mb-2 mt-1">
@@ -109,9 +107,9 @@
 
                 <div class="mb-3">
                     <div class="header-box font ">
-                        <h5> เมนูหลัก</h5>
+                        <h6> เมนูหลัก</h6>
                     </div>
-                    <div size="3" class="font top-menu ">
+                    <div size="3" class="font1 top-menu ">
                         <div style="font-size: 100%;">
                             <img src="https://goo.gl/2HR6XB">
                             <span=""="" style="font-size:100%;">
@@ -119,34 +117,33 @@
                                     <a href="https://thephadho.blogspot.com/p/blog-page_2.html"
                                         target="_blank">วิสัยทัศน์/พันธกิจ</a>
                                 </span>
-                            </span>
+                                </span>
                         </div>
                         <div style="font-size: 100%;">
                             <img src="https://goo.gl/ec1ZEd" style="font-size: 100%;">
-                            <span=""="" style="font-size:100%;"> </span><span=""="" style="font-size:100%;">
-                                <span family="TH SarabunIT๙">
-                                    <a href="https://thephadho.blogspot.com/p/blog-page_6.html"
-                                        target="_blank">ข้อมูลบุคลากร</a>
-                                </span>
-                            </span>
+                            <span=""="" style="font-size:100%;"> </span>
+                                <span=""="" style="font-size:100%;">
+                                    <span family="TH SarabunIT๙">
+                                        <a href="https://thephadho.blogspot.com/p/blog-page_6.html"
+                                            target="_blank">ข้อมูลบุคลากร</a>
+                                    </span>
+                                    </span>
                         </div>
 
                         <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-stalker-16.png"
                             style="font-size: 100%;">
                         <span=""="" style="font-size:100%;"></span>
-                        <span=""="" style="font-size:100%;">
-                            <span family="TH SarabunIT๙">
-                                <a href="https://thephadho.blogspot.com/p/blog-page_23.html"
-                                    target="_blank">โครงสร้างการบริหารงาน</a>
-                            </span>
-                        </span>
+                            <span=""="" style="font-size:100%;">
+                                <span family="TH SarabunIT๙">
+                                    <a href="https://thephadho.blogspot.com/p/blog-page_23.html"
+                                        target="_blank">โครงสร้างการบริหารงาน</a>
+                                </span>
+                                </span>
                     </div>
-
-
                 </div>
                 <div class="mb-3">
                     <div class="header-box font ">
-                        <h5> วีดีโอแนะนำ</h5>
+                        <h6> วีดีโอแนะนำ</h6>
                     </div>
                     <div class="font border">
                         <div class="text-center mb-2 mt-1">
@@ -155,14 +152,28 @@
 
                     </div>
                 </div>
+            </div>
 
+
+            <!-- Content -->
+            @yield('content')
+
+
+            <!-- Right Bar -->
+            <div class="col-lg-3  my-4">
+                <div class="mb-3">
+                    <div class="search font mb-3">
+                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
+                    </div>
+                </div>
+            </div>
 
         </div>
-        @yield('content')
-    </div>
     </div>
 
-    <!-- Page Content -->
+
+
+
 
 
     <!-- /.row -->
