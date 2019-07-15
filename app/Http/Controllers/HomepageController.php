@@ -43,5 +43,9 @@ class HomepageController extends Controller
         ]);
     }
 
+    public function intro(){
+        return view('intro');
+    }
+
 
 }

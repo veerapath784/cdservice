@@ -9,7 +9,7 @@
                     </div>
                 </div>
             </div>
-<div class="col-lg-6">
+<div class="col-lg-9">
 
 
     <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
@@ -35,7 +35,7 @@ background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
 
                         <td width="200px;">{{$department->name}}</td>
                         <td width="400px;">{{$department->address}}</td>
-                        <td width="160px;">{{$department->phone}}</td>
+                        <td width="100px;">{{$department->phone}}</td>
                       </tr>
                       @endforeach
                     </tbody>

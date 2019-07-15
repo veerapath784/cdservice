@@ -13,8 +13,8 @@
     return view('test');
 });
 
-
-Route::get('/', 'HomepageController@index');
+Route::get('/', 'HomepageController@intro');
+Route::get('/home', 'HomepageController@index');
 Route::get('/history', 'HomepageController@history');
 Route::get('/department', 'HomepageController@department');
 Route::get('/travel', 'HomepageController@travel');

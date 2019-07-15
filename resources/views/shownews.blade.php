@@ -101,7 +101,7 @@
             <div class="col-lg-9 bg-white my-4">
                 <div class="row">
                         <ol class="breadcrumb bg-ligh mt-2 ml-3">
-                        <li><a href="{!! url('/') !!}">หน้าแรก </a></li>
+                        <li><a href="{!! url('/home') !!}">หน้าแรก </a></li>
                         &nbsp;&nbsp;&rarr;&nbsp;&nbsp;
 
                         <li>

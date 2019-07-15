@@ -1,6 +1,6 @@
 
                 <!-- Left Bar -->
-                <div class="mb-3">
+                <div class="mb-2">
                     <div class="header-box font ">
                         <h6> นายอำเภอเชียงดาว</h6>
                     </div>
@@ -14,7 +14,7 @@
                 </div>
 
 
-                <div class="mb-3">
+                <div class="mb-2">
                     <div class="header-box font ">
                         <h6> เมนูหลัก</h6>
                     </div>

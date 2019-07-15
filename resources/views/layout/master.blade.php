@@ -51,7 +51,7 @@
             <div class="navbar-collapse collapse" id="navbar10">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">หน้าหลัก
+                        <a class="nav-link" href="/home">หน้าหลัก
                             <span class="sr-only">(current)</span>
                         </a>
                     </li> <span class="nav-item" style="color:aliceblue; margin-top:5px;">|</span>
@@ -86,38 +86,11 @@
             ยินดีต้อนรับเข้าสู่ "อำเภอเชียงดาว" โทรศัพท์: 0-5345-5176 FAX: 0-5345-5176
         </h4>
     </div>
-
-    {{-- <div class="container">
-        <div class="row" style="padding-right:3px">
-            <div class="col-lg-3  my-4" style="font-size:13px;">
-                    @include('layout.leftbar')
-
-                    </div>
-                </div>
-            </div> --}}
-
-
             <!-- Content -->
             @yield('content')
 
-
-            {{-- <!-- Right Bar -->
-            <div class="col-lg-3  my-4">
-                <div class="mb-3">
-                    <div class="search font mb-3">
-                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
-                    </div>
-                </div>
-            </div> --}}
-
         </div>
     </div>
-
-
-
-
-
-
     <!-- /.row -->
     <br>
     <!-- Footer -->
@@ -127,12 +100,7 @@
         </div>
         <!-- /.container -->
     </footer>
-
-
     <!-- /.container -->
-
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

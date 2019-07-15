@@ -46,13 +46,13 @@
     </div>
 
 
-    <div style=" border: 6px solid #fff; background-color: #fff;">
-        <h3 class="fontPrompt mb-3" style="border-left: 6px solid #ffc13d !important;
+    <div >
+        <h3 class="fontPrompt" style="margin:0; border-left: 6px solid #ffc13d !important;
      background: linear-gradient(to left, #aaffa9 40%, #07524b 100%);">
             <span class="font" style="margin-left:15px; color:#fff;"><i class="fas fa-newspaper"></i> บทความใหม่ล่าสุด
             </span></h3>
         @foreach ($latestArticle as $article)
-        <div class="card mb-4">
+        <div class="card mb-1">
             <div class="row">
             <div class="col-md-4">
             <img class="my-4 ml-3" style="background-repeat: no-repeat;
@@ -74,8 +74,8 @@
             </div>
         </div>
         @endforeach
-        <div class="text-center font">
-                <a href="#">บทความทั้งหมด</a>
+        <div class="text-center font" style=" border-radius: 25px; border: 6px solid #fff; background-color: #fff;">
+                <a style="text-decoration: none;" href="#">บทความทั้งหมด</a>
             </div>
     </div>
 
@@ -85,14 +85,10 @@
     <!-- /.col-6 -->
 </div>
 
-  <!-- Right Bar -->
-            <div class="col-lg-3  my-4">
-                <div class="mb-3">
-                    <div class="search font mb-3">
-                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
-                    </div>
-                </div>
-            </div>
+   <!-- Right Bar -->
+   @include('layout.rightbar')
+
+
 
         </div>
     </div>
