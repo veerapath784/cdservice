@@ -47,5 +47,9 @@ class HomepageController extends Controller
         return view('intro');
     }
 
+    public function contact(){
+        return view('contact');
+    }
+
 
 }

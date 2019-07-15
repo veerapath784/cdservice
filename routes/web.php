@@ -16,6 +16,7 @@
 Route::get('/', 'HomepageController@intro');
 Route::get('/home', 'HomepageController@index');
 Route::get('/history', 'HomepageController@history');
+Route::get('/contact', 'HomepageController@contact');
 Route::get('/department', 'HomepageController@department');
 Route::get('/travel', 'HomepageController@travel');
 Route::get('/news/{id}', 'NewsController@show');

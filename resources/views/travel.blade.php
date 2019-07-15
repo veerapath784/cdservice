@@ -50,7 +50,7 @@ figure:hover+span {
 <div class="container font">
     <div class="col-lg-12">
         <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
-            <h3 class="fontPrompt mb-3" style="border-left: 6px solid #FDE313;
+            <h3 class="fontPrompt mb-3" style="text-align:center; border-left: 6px solid #FDE313;
 background: linear-gradient(to left, #aaffa9 40%, #1D976C 100%);">
                 <span class="font" style="margin-left:15px; color:#fff;">แหล่งท่องเที่ยว </span></h3>
             <div class="container " style="font-size:13px;">

@@ -10,7 +10,7 @@
                 </div>
             </div>
 
-<div class="col-lg-6">
+<div class="col-lg-9">
 
 
     <div class="my-4" style=" border: 6px solid #fff; background-color: #fff;">
