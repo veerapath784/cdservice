@@ -20,8 +20,16 @@
     <link href="https://fonts.googleapis.com/css?family=Niramit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
-
+<style>
+a:link	{
+    text-decoration:none;
+    color: #075;
+    }
+    a:visited	{
+    text-decoration:none;
+    color: #075;
+    }
+    </style>
 
 </head>
 
@@ -64,12 +72,12 @@
                             <a class="dropdown-item" href="/history">ประวัติอำเภอเชียงดาว</a>
                             <a class="dropdown-item" href="/department">หน่วยงานต่างๆในอำเภอ</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/department">ทำเนียบบุคลากร</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
                     <span class="nav-item" style="color:aliceblue; margin-top:5px;">|</span>
                     <li class="nav-item">
-                        <a class="nav-link" href="/travel">สถานที่ท่องเที่ยว</a>
+                        <a class="nav-link" href="#">สถานที่ท่องเที่ยว</a>
                     </li> <span class="nav-item" style="color:aliceblue; margin-top:5px;">|</span>
                     <li class="nav-item">
                         <a class="nav-link" href="#">ที่พัก/รีสอร์ท</a>
@@ -87,35 +95,45 @@
         </h4>
     </div>
 
-    {{-- <div class="container">
-        <div class="row" style="padding-right:3px">
-            <div class="col-lg-3  my-4" style="font-size:13px;">
-                    @include('layout.leftbar')
+    <div class="container">
+        <div class="row">
 
+            <div class="col-lg-9 bg-white my-4">
+                <div class="row">
+                    <ol class="breadcrumb bg-ligh mt-2 ml-3">
+                        <li><a href="{!! url('/') !!}">หน้าแรก </a></li>
+                        &nbsp;&nbsp;&rarr;&nbsp;&nbsp;
+                        <li><a href="{!! url('/travel') !!}">สถานที่ท่องเที่ยว </a></li>
+                        &nbsp;&nbsp;&rarr;&nbsp;&nbsp;
+                        <li class="active">{!! $travel->title !!}
+                        </li>
+                    </ol>
+
+                    <div class="col-md-11">
+                        <hr>
+                        <h2 class="fontsupermarket">{{$travel->title}}</h2>
+                        <br>
+                        <p>{!!$travel->detail!!}</p>
                     </div>
                 </div>
-            </div> --}}
+            </div>
 
-
-            <!-- Content -->
-            @yield('content')
-
-
-            {{-- <!-- Right Bar -->
-            <div class="col-lg-3  my-4">
-                <div class="mb-3">
-                    <div class="search font mb-3">
-                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
-                    </div>
+                    <div class="col-md-3 my-4">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2Fcategory%2FGovernment-Organization%2F%25E0%25B8%2597%25E0%25B8%25B5%25E0%25B9%2588%25E0%25B8%25A7%25E0%25B9%2588%25E0%25B8%25B2%25E0%25B8%2581%25E0%25B8%25B2%25E0%25B8%25A3%25E0%25B8%25AD%25E0%25B8%25B3%25E0%25B9%2580%25E0%25B8%25A0%25E0%25B8%25AD%25E0%25B9%2580%25E0%25B8%258A%25E0%25B8%25B5%25E0%25B8%25A2%25E0%25B8%2587%25E0%25B8%2594%25E0%25B8%25B2%25E0%25B8%25A7-512270082197213%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1730915820521210" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
-            </div> --}}
-
+            </div>
+            <div class="ml-5">
+                <div class="fb-comments" data-href="http://localhost:8000/news/{!! $url !!}" data-width=""
+                    data-numposts="5">
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
+
+    </div>
     </div>
 
-
-
-
+    <!-- Page Content -->
 
 
     <!-- /.row -->

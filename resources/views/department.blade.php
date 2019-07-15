@@ -1,7 +1,14 @@
 @extends('layout.master')
 @section('content')
 
+<div class="container">
+        <div class="row" style="padding-right:3px">
+            <div class="col-lg-3  my-4" style="font-size:13px;">
+                    @include('layout.leftbar')
 
+                    </div>
+                </div>
+            </div>
 <div class="col-lg-6">
 
 

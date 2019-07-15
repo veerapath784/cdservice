@@ -21,7 +21,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-
+        <style>
+                a:link	{
+                    text-decoration:none;
+                    color: #075;
+                    }
+                    a:visited	{
+                    text-decoration:none;
+                    color: #075;
+                    }
+                    </style>
 </head>
 
 <body>
@@ -91,12 +100,12 @@
 
             <div class="col-lg-9 bg-white my-4">
                 <div class="row">
-                    <ol class="breadcrumb bg-white">
+                        <ol class="breadcrumb bg-ligh mt-2 ml-3">
                         <li><a href="{!! url('/') !!}">หน้าแรก </a></li>
                         &nbsp;&nbsp;&rarr;&nbsp;&nbsp;
 
                         <li>
-                            {!!$article->category['name']!!}</li>
+                                <a href="{!! url('#') !!}">บทความ </a></li>
                             &nbsp;&nbsp;&rarr;&nbsp;&nbsp;
                         <li class="active">{!! $article->title !!}
                         </li>

@@ -1,5 +1,13 @@
 @extends('layout.master')
 @section('content')
+<div class="container">
+    <div class="row" style="padding-right:3px">
+        <div class="col-lg-3  my-4" style="font-size:13px;">
+                @include('layout.leftbar')
+
+                </div>
+            </div>
+        </div>
 
 <div class="col-lg-6">
     <div style=" color: #07524b; border-style: solid; border-width: 0px 0px 5px 0px;" id="carouselExampleIndicators"
@@ -77,7 +85,17 @@
     <!-- /.col-6 -->
 </div>
 
+  <!-- Right Bar -->
+            <div class="col-lg-3  my-4">
+                <div class="mb-3">
+                    <div class="search font mb-3">
+                        <input class="form-control" type="text" placeholder="ค้นหา..." aria-label="Search">
+                    </div>
+                </div>
+            </div>
 
+        </div>
+    </div>
 
 
 @endsection
