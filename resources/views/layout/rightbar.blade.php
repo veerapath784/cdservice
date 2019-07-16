@@ -11,16 +11,13 @@
                 <div class="header-box font ">
                     <h6> เว็บไซต์ที่เกี่ยวข้อง</h6>
                 </div>
-                <div class="font border col-md-12">
-                    <div class="col-md-2">
-                    <a href="">test</a>
-                    <a href="">test</a>
-                    <a href="">test</a>
-                    <a href="">test</a>
-                    <a href="">test</a>
-                    <a href="">test</a>
-                    <a href="">test</a>
-                </div>
+                <div class="font  top-menu    ">
+                    <a href="https://www.chiangdaohospital.net/">โรงพยาบาลเชียงดาว</a><br>
+                    <a href="http://www.chiangdao.ac.th/cdwweb/">โรงเรียนเชียงดาววิทยาคม </a><br>
+                    <a href="http://www.ubrp.ac.th/index.html">มูลนิธิเจ้าฟ้าอุบลรัตน์</a><br>
+                    <a href="https://www.cmru.ac.th/home.html">มหาวิทยาลัยราชภัฏเชียงใหม่</a><br>
+
+
                     </div>
 
 

@@ -59,7 +59,7 @@ a:link	{
             <div class="navbar-collapse collapse" id="navbar10">
                 <ul class="navbar-nav nav-fill w-100">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">หน้าหลัก
+                        <a class="nav-link" href="/home">หน้าหลัก
                             <span class="sr-only">(current)</span>
                         </a>
                     </li> <span class="nav-item" style="color:aliceblue; margin-top:5px;">|</span>
